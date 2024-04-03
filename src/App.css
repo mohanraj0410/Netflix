@@ -1,0 +1,412 @@
+.body {
+  background-image: url(img/netflix-backgroundImage.jpg);
+  width: 100%;
+  height: 100vh;
+}
+.background-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+body {
+  /* width: 0%;
+    height: 0%; */
+  padding: 0;
+  margin: 0;
+}
+input {
+  outline: none;
+}
+nav {
+  /* position: fixed; */
+  z-index: 5;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.938), rgba(0, 0, 0, 0.027));
+}
+.signIn-user {
+  width: fit-content;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.signIn-profile {
+  text-align: center;
+  margin: 10px;
+}
+.signIn-profile p {
+  margin: 0;
+  color: white;
+}
+.user-icon {
+  border: 1px solid rgb(185, 183, 183);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  color: rgb(185, 183, 183);
+}
+.signIn-user select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+}
+.GPT-Button {
+  cursor: pointer;
+  background-color: rgba(245, 222, 179, 0.77);
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: black;
+}
+.GPT-Button:hover {
+  background-color: rgb(219, 188, 132);
+}
+.signOut-Button {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.645);
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: white;
+}
+.signOut-Button:hover {
+  background-color: rgba(255, 0, 0, 0.932);
+}
+.brand-logo {
+  width: 200px;
+  height: 80px;
+  padding: 10px 10px;
+}
+.SignIn-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignIn-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.658);
+}
+@media only screen and (max-width: 600px) {
+  .SignIn-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.658);
+  }
+}
+.SignIn-form {
+  padding: 50px 50px;
+}
+.SignIn-form h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.SignIn-form input {
+  display: block;
+  width: 94%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: rgba(240, 248, 255, 0.596);
+  background-color: rgba(70, 68, 68, 0.603);
+  padding-left: 20px;
+  font-size: 15px;
+  color: rgba(240, 248, 255, 0.705);
+}
+.SignIn-form .errorMessage {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.SignIn-form button {
+  width: 100%;
+  height: 50px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.795);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.SignIn-form button:hover {
+  background-color: red;
+}
+.SignIn-or-SignUp {
+  color: white;
+}
+.SignIn-or-SignUp a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: red;
+}
+.browser {
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.mainContainer {
+  width: 100%;
+  height: 85vh;
+}
+
+.trailerVideo {
+  width: 100%;
+  height: 85vh;
+}
+.trailerVideo iframe {
+  width: 100%;
+  height: 110vh;
+  border-style: none;
+}
+.trailerVideoTitle {
+  background-color: rgba(0, 0, 0, 0.525);
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: end;
+  z-index: 4;
+}
+.trailerVideoTitle div {
+  width: 30%;
+  margin: 0px 0px 150px 80px;
+}
+.trailerVideoTitle h1 {
+  padding-bottom: 20px;
+}
+.trailerVideoTitle p {
+  text-align: justify;
+  font-size: medium;
+  padding-bottom: 20px;
+}
+.play-now-btn {
+  padding: 10px 20px;
+  margin-right: 30px;
+  font-size: medium;
+  background-color: red;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+.more-info-btn {
+  padding: 10px 20px;
+  margin-right: 30px;
+  font-size: medium;
+  border-style: none;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.movieList {
+  margin-top: 180px;
+  background-color: black;
+  z-index: 3;
+  padding-bottom: 50px;
+}
+.MovieCard {
+  margin: 0px 50px;
+}
+.MovieCard h2 {
+  color: white;
+  margin: 20px 0px;
+}
+.MovieCardImage {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+.MovieCardImage::-webkit-scrollbar {
+  display: none;
+}
+.MoviePoster img {
+  width: 150px;
+  height: 210px;
+}
+.MoviePoster img:hover {
+  filter: opacity(0.5);
+}
+.MoviePoster p {
+  color: white;
+}
+.gpt-bgimg {
+  background-image: url(img/netflix-backgroundImage.jpg);
+  width: 100%;
+  height: 100vh;
+  /* filter:brightness(70%) */
+}
+
+.bgcolor{
+  background-color: rgba(0, 0, 0, 0.356);
+  width: 100%;
+  height: 100vh;
+}
+.gptSearch {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  
+}
+.gptSearch div {
+  border: 1px solid black;
+  height: fit-content;
+  margin-top: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+.gptSearch input {
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-style: none;
+  margin-right: 10px;
+}
+.gptSearch button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgba(255, 0, 0, 0.715);
+  color: white;
+}
+.gptSearch button:hover{
+  background-color: red;
+  cursor: pointer;
+}
+.MoviePoster {
+  position: relative;
+}
+
+.ImageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.MovieImage {
+  width: 200px;
+  height: auto;
+}
+
+.TrailerButton {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity ease;
+}
+
+.ImageContainer:hover .TrailerButton {
+  opacity: 1;
+}
+.movieTrailerContainer{
+  width: 100%;
+  height: 100vh;
+}
+.movieTrailer iframe{
+  width: 100%;
+  height: 100vh;
+  border:none;
+  position: absolute;
+}
+
+.movieTrailerDeatils {
+  background-color: rgba(0, 0, 0, 0.525);
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  z-index: 4;
+}
+.movieTrailerDeatils div {
+  width: 30%;
+  margin: 0px 0px 150px 80px;
+}
+
+.movieTrailerDeatils h1 {
+  padding-bottom: 20px;
+  color: red;
+}
+.movieTrailerDeatils p {
+  text-align: justify;
+  font-size: medium;
+  padding-bottom: 20px;
+}
+.gptMovielist {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: absolute;
+  /* background-color: black; */
+  
+}
+
+.gptMovieCards {
+  position: relative; 
+}
+
+.gptMovieContainer {
+  position: relative;
+  display: inline-block; 
+}
+
+.gptMovieImage {
+  width: 200px;
+  height: auto; 
+  position: relative;
+  border-radius: 5px;
+}
+.gptMovieImage:hover{
+  box-shadow: 0 0 10px 1px white;
+}
+.gptViewButton {
+  position: absolute; 
+  bottom: 30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px; 
+  background-color: red; 
+  color: white; 
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer; 
+  opacity: 0; 
+  transition: opacity ease 0.3s;
+}
+
+.gptMovieImage:hover + .gptViewButton,
+.gptViewButton:hover {
+  opacity: 1; 
+  
+}
